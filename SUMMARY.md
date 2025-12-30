@@ -1,7 +1,6 @@
 # 簡介
 
 - [簡介](./README.md)
-
 - [Mage AI 基本說明](./mage-intro/README.md)
         - [啟動 MageAI](./mage-intro/mage-exec.md)
 - [抓取資料]()
