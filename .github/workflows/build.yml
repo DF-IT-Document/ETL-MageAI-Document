@@ -26,6 +26,6 @@ jobs:
         with: 
           name: "ETL MageAI Doc"
           path: book
-          retention-days: 30
+          retention-days: 1
           
 
