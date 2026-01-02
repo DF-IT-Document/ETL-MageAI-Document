@@ -18,7 +18,7 @@ instantclient-basic-linux.x64-19.29.0.0.0dbru.zip 是從 Oracle 官方下載的 
 
 用來讓 Mage 能處理 Oracle 11 資料庫的連線需求。
 
-下載網址：https://www.oracle.com/database/technologies/instant-client/linux-x86-64-downloads.html
+下載網址：[https://www.oracle.com/database/technologies/instant-client/linux-x86-64-downloads.html](https://www.oracle.com/database/technologies/instant-client/linux-x86-64-downloads.html)
 
 檔案有另外備份至 SharePoint，位於: [/01.Software/開發工具/etl/instantclient-basic-linux.x64-19.29.0.0.0dbru.zip](https://dfrecyclecom.sharepoint.com/IT/Shared%20Documents/01.Software/%E9%96%8B%E7%99%BC%E5%B7%A5%E5%85%B7/etl/instantclient-basic-linux.x64-19.29.0.0.0dbru.zip)
 
