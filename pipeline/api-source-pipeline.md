@@ -77,8 +77,15 @@ def load_data_from_api(*args, **kwargs):
 
 ### 使用 OAuth 取 Token + 送 API
 
-```python
+這個範例使用了 Mage 的 Secrets 功能來存放 OAuth 所需的參數
 
+Secrets 設定畫面於此：
+
+![Secrets Setting](secrets.png)
+
+要使用 Secrets ，得使用到 `mage_ai.data_preparation.shared.secrets` 裡的 `get_secret_value` 函式來取得參數值
+
+```python
 import io
 import pandas as pd
 from mage_ai.data_preparation.shared.secrets import get_secret_value
@@ -130,6 +137,8 @@ def load_data_from_api(*args, **kwargs):
     return result
 # @test 區塊省略
 ```
+
+以上範例使用到三個 Secrets ： `AZ_TENANT_ID` 、 `AZ_CLIENT_ID` 、 `AZ_CLIENT_SECRET` ，請依照實際需求建立並設定 Secrets 。
 
 
 ## 匯出資料
