@@ -34,5 +34,3 @@ Destination 區塊填入要匯出至哪個資料庫的資訊
 ### 資料庫連線寫法
 
 source 和 destination 區塊的連線寫法是相同的，不過各種資料庫的連線寫法有所不同，可參閱 MageAI 官方提供的範本：https://github.com/mage-ai/mage-ai/tree/master/mage_integrations/mage_integrations/destinations
-
-## 特殊：從 Oracle 11 抓取資料
