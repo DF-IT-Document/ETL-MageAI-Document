@@ -20,8 +20,7 @@ API 的處理方式與 [Oracle 11]一樣使用 Standard (batch) Pipeline 來處�
 ### 送 GET API
 
 ```python
-import io 
-from mage_ai.data_preparation.shared.secrets import get_secret_value
+import io  
 import requests
 if 'data_loader' not in globals():
     from mage_ai.data_preparation.decorators import data_loader
@@ -37,7 +36,7 @@ def load_data_from_api(*args, **kwargs):
     
 
     url = "https://example.com/api/data"
-    resp = requests.get(url, headers=headers)
+    resp = requests.get(url)
     
     return resp.json()
 
@@ -51,23 +50,23 @@ def test_output(output, *args) -> None:
 
 ```
 
-### 送 POST API（沒 body）
+### 送 POST API（JSON body）
 
 ```python
 # import 省略
 
 @data_loader
 def load_data_from_api(*args, **kwargs):
-    """
-    Template for loading data from API
-    """
-    
     url = "https://example.com/api/data"
     data = {
         "param1": "value1",
         "param2": "value2"
     }
-    resp = requests.post(url, json=data)
+    headers = { 
+        "Content-type": "application/json",
+    }
+ 
+    resp = requests.post(url, headers=headers, json=data)
     
     return resp.json()
 
@@ -95,8 +94,7 @@ if 'data_loader' not in globals():
 if 'test' not in globals():
     from mage_ai.data_preparation.decorators import test
 
-def load_token(): 
-    
+def load_token():     
     tenant_id = get_secret_value('AZ_TENANT_ID')
     client_id = get_secret_value('AZ_CLIENT_ID')
     client_secret = get_secret_value('AZ_CLIENT_SECRET')
@@ -121,9 +119,6 @@ def load_token():
 
 @data_loader
 def load_data_from_api(*args, **kwargs):
-    """
-    Template for loading data from API
-    """
     token = load_token()
 
     headers = {
