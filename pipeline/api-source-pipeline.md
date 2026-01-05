@@ -19,6 +19,8 @@ API 的處理方式與 [Oracle 11]一樣使用 Standard (batch) Pipeline 來處�
 
 ### 送 GET API
 
+以下範例會從 `https://example.com/api/data` 抓取資料，而 API 回傳的資料為 JSON 格式。
+
 ```python
 import io  
 import requests
@@ -52,6 +54,18 @@ def test_output(output, *args) -> None:
 
 ### 送 POST API（JSON body）
 
+
+以下範例會從 `https://example.com/api/data` 抓取資料，API 回傳的資料為 JSON 格式。
+
+POST body 為 
+```
+{
+	"param1": "value1",
+	"param2": "value2"
+}
+```
+
+
 ```python
 # import 省略
 
@@ -76,7 +90,9 @@ def load_data_from_api(*args, **kwargs):
 
 ### 使用 OAuth 取 Token + 送 API
 
-這個範例使用了 Mage 的 Secrets 功能來存放 OAuth 所需的參數
+以下範例有兩個 function：`load_token()`用來進行 OAuth 的登入（取得 token）；`load_data_from_api(*args, **kwar)` 處理後續的資料抓取。
+
+這邊使用了 Mage 的 Secrets 功能來存放 OAuth 所需的參數
 
 Secrets 設定畫面於此：
 
@@ -137,5 +153,6 @@ def load_data_from_api(*args, **kwargs):
 
 
 ## 匯出資料
+
 
 匯出資料的部分與 [Oracle 11] 一樣，請參考 [Oracle 11 的《匯出資料》章節](oracle-source-pipeline.md#匯出資料) 。
