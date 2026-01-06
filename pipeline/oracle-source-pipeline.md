@@ -23,7 +23,7 @@ Standard (batch) Pipeline 編輯畫面左側就有專案資料夾。
 
 io_config.yaml 的內容大致如下：
 
-```yaml
+```yaml,editable
 version: 0.1.1
 default:
   # Default profile created for data IO access.
@@ -36,7 +36,7 @@ default:
 
 在下方加上以下內容（根據 Oracle 實際狀況調整）
 
-```yaml
+```yaml,editable
 OracleSource:
   connector_type: oracledb
   host: 10.0.100.200
@@ -51,7 +51,7 @@ OracleSource:
 
 而我們匯出的資料庫連線也建立一筆設定，這邊選用 PosgreSQL（根據實際狀況調整）
 
-```yaml
+```yaml,editable
 PosgreSourceForWrite:
   POSTGRES_CONNECT_TIMEOUT: 10
   POSTGRES_HOST: example.ap-northeast-1.rds.amazonaws.com
@@ -64,8 +64,7 @@ PosgreSourceForWrite:
 
 所以整個 io_config.yaml 會長得像這樣：
 
-```yaml
-
+```yaml,editable
 version: 0.1.1
 default:
   # Default profile created for data IO access.
@@ -106,7 +105,7 @@ PosgreSourceForWrite:
 
 接著在 Python 區塊中，輸入以下程式碼（根據需要，調整 query 變數）：
 
-```python
+```python,editable
 from mage_ai.settings.repo import get_repo_path
 from mage_ai.io.config import ConfigFileLoader
 from mage_ai.io.oracledb import OracleDB
@@ -178,7 +177,7 @@ def test_output(output, *args) -> None:
 
 Data Exporter 區塊的程式碼如下：
 
-```python
+```python,editable
 from mage_ai.settings.repo import get_repo_path
 from mage_ai.io.config import ConfigFileLoader
 from mage_ai.io.postgres import Postgres

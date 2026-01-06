@@ -3,3 +3,6 @@ authors = ["大豐環保科技股份有限公司"]
 language = "zh-Hant"
 src = "."
 title = "MageAI 使用說明書"
+
+[output.html.playground]
+editable = true

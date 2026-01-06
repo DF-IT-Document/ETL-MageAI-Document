@@ -21,7 +21,7 @@ API 的處理方式與 [Oracle 11]一樣使用 Standard (batch) Pipeline 來處�
 
 以下範例會從 `https://example.com/api/data` 抓取資料，而 API 回傳的資料為 JSON 格式。
 
-```python
+```python,editable
 import io  
 import requests
 if 'data_loader' not in globals():
@@ -66,7 +66,7 @@ POST body 為
 ```
 
 
-```python
+```python,editable
 # import 省略
 
 @data_loader
@@ -100,7 +100,7 @@ Secrets 設定畫面於此：
 
 要使用 Secrets ，得使用到 `mage_ai.data_preparation.shared.secrets` 裡的 `get_secret_value` 函式來取得參數值
 
-```python
+```python,editable
 import io
 import pandas as pd
 from mage_ai.data_preparation.shared.secrets import get_secret_value
