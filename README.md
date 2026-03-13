@@ -6,6 +6,13 @@
 
 使用 Markdown 來撰寫。
 
+## 關於文件
+
+本文件僅 Mage AI 的使用說明。
+
+大豐環保的 Mage AI 的環境請參閱[《大豐環保 Mage AI 系統說明書》（private repository）](https://github.com/DF-IT-Document/Dafon-ETL-Mage-Document)
+
+
 ## 文件位置
 
 而整份文件的目錄則位於 [`SUMMARY.md`](./SUMMARY.md)
