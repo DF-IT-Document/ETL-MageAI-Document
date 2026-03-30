@@ -18,6 +18,7 @@
 #### 共用區塊
 
 - [Standard Pipeline 共用區塊](./pipeline/share-block/standard.md)
+- [Integration Pipeline](./pipeline/share-block/integration.md)
 
 #### 資料轉換
 
