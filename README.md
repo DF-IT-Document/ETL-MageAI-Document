@@ -1,6 +1,7 @@
 # MageAI 使用說明
 
 ![](https://img.shields.io/badge/Generator-mdbook-black?logo=mdbook&logoColor=black&labelColor=white)
+[![Build book to html files](https://github.com/DF-IT-Document/ETL-MageAI-Document/actions/workflows/build.yml/badge.svg)](https://github.com/DF-IT-Document/ETL-MageAI-Document/actions/workflows/build.yml)
 
 本專案是 MageAI 的使用說明。
 
