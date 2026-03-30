@@ -15,6 +15,10 @@
 	- [特殊：從 Oracle 11 抓取資料](./pipeline/oracle-source-pipeline.md)
 - [從 API 抓取資料](./pipeline/api-source-pipeline.md)
 
+#### 共用區塊
+
+- [Standard Pipeline 共用區塊](./pipeline/share-block/standard.md)
+
 #### 資料轉換
 
 - [資料轉換基礎說明](./pipeline/transformer.md)
