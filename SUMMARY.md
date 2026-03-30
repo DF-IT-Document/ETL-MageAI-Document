@@ -15,10 +15,11 @@
 	- [特殊：從 Oracle 11 抓取資料](./pipeline/oracle-source-pipeline.md)
 - [從 API 抓取資料](./pipeline/api-source-pipeline.md)
 
-#### 共用區塊
+#### 共用
 
 - [Standard Pipeline 共用區塊](./pipeline/share-block/standard.md)
 - [Integration Pipeline](./pipeline/share-block/integration.md)
+- [共用 python function / variable code](./pipeline/share-block/utils.md)
 
 #### 資料轉換
 
