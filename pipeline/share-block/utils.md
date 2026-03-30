@@ -29,3 +29,8 @@ def my_data_loader():
 import 語法是 `from { MageAI 專案名稱 }.utils.{ 檔案名稱 } import { function名稱 }`。
 
 這邊專案的名稱是 `my_project`，所以才會是 `from my_project.utils.add_num import add_one`。
+
+
+### 官方說明文件
+
+https://docs.mage.ai/development/dependencies/custom-files
