@@ -11,7 +11,7 @@
 
 本文件僅 Mage AI 的使用說明。
 
-大豐環保的 Mage AI 的環境請參閱[《大豐環保 Mage AI 系統說明書》（private repository）](https://github.com/DF-IT-Document/Dafon-ETL-Mage-Document)
+大豐環保的 Mage AI 的環境請參閱[《大豐環保 Mage AI 專案與環境說明書》（private repository）](https://github.com/DF-IT-Document/Dafon-ETL-Mage-Document)
 
 
 ## 文件位置
