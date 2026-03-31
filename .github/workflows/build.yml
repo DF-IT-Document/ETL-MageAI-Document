@@ -15,9 +15,9 @@ jobs:
       - uses: actions/checkout@v6
 
       - name: Setup mdBook
-        uses: peaceiris/actions-mdbook@v2
-        with:
-          mdbook-version: 'latest'
+        run: |
+          cargo install mdbook
+          mdbook --version
 
       - run: mdbook build
       
